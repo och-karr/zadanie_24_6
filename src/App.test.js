@@ -27,7 +27,7 @@ it('should update player score', () => {
 });
 
 it('is new player add', () => {
-  const appComponent = shallow(<App players={[]}/>);
+  const appComponent = shallow(<App/>);
   const onPlayerAdd = appComponent.find(AddPlayer).prop('onPlayerAdd');
   onPlayerAdd('Ania');
   const players = appComponent.state('players');
